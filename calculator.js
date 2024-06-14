@@ -17,6 +17,6 @@ function backspace(){
 
 function calculate(){
     let ans = eval(dislay);
-    document.getElementById("screen").value = ans;
     dislay=ans;
+    document.getElementById("screen").value = dislay;
 }
