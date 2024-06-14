@@ -16,7 +16,15 @@ function backspace(){
 }
 
 function calculate(){
-    let ans = eval(dislay);
-    dislay=ans;
-    document.getElementById("screen").value = dislay;
+    try{
+        let ans = eval(dislay);
+        console.log(ans);
+        dislay=ans;
+        document.getElementById("screen").value = dislay;
+    }
+    catch(Error){
+        document.getElementById("screen").value = "Error";
+    }
+    
+    dislay = "";
 }

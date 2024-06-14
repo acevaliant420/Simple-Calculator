@@ -10,14 +10,14 @@
         <script src="calculator.js"></script>
         <div class="calculator">
             <div class="answer">
-                <input class="display" id="screen" readonly placeholder="Start Calulating"/>
+                <input class="display" id="screen" readonly placeholder="0"/>
             </div>
             <div class="keys">
                 <div class="row">
                     <button class="operator" id="clear" onclick="appendtoDisplay('%')">%</button>
                     <button class="operator" id="backspace" onclick="backspace()">CE</button>
                     <button class="operator" id="percent" onclick="erase()">C</button>
-                    <button class="operator" id="divide" onclick="appendtoDisplay('%')">/</button>
+                    <button class="operator" id="divide" onclick="appendtoDisplay('/')">/</button>
                 </div>
                 <div class="row">
                     <button class="number" id="seven" onclick="appendtoDisplay('7')">7</button>
