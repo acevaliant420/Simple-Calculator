@@ -20,7 +20,7 @@ body{
 
 .display {
     font-size: 2rem;
-    text-align: center;
+    text-align: right;
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding: 8px;
@@ -31,6 +31,10 @@ body{
     margin-right: auto;
     background-color: #f0f0f0;
     transition: background-color 0.3s;
+}
+
+.display::placeholder{
+    text-align: center;
 }
 
 
@@ -44,10 +48,10 @@ body{
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 350px;
+    padding: 8px;
+    border: 4px solid black;
+    border-radius: 5%;
+    width: 340px;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -80,6 +84,7 @@ button:active {
     transform: translateY(2px);
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
 }
+
 
 button:focus {
     outline: none;
